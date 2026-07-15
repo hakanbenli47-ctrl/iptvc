@@ -176,7 +176,7 @@ export const content = {
           name: "6 Aylık Paket",
           duration: "6 Ay",
           oldPrice: "",
-          price: "40€",
+          price: "30€",
           highlight: false,
           text:
             "Kısa süreli kullanım, cihaz testi ve perakende başlangıç için uygun paket.",
@@ -192,7 +192,7 @@ export const content = {
           name: "12 + 3 Ay Kampanya",
           duration: "15 Ay",
           oldPrice: "12 ay fiyatına",
-          price: "70€",
+          price: "50€",
           highlight: true,
           text:
             "12 ay alana 3 ay hediye kampanyası. Perakende kullanıcılar için en güçlü seçenek.",
@@ -208,7 +208,7 @@ export const content = {
           name: "2 Yıllık Paket",
           duration: "24 Ay",
           oldPrice: "",
-          price: "120€",
+          price: "90€",
           highlight: false,
           text:
             "Uzun süreli kullanım ve daha avantajlı toplam fiyat isteyenler için hazırlanmıştır.",
