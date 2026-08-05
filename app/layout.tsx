@@ -13,6 +13,10 @@ export const metadata: Metadata = {
 
   applicationName: siteName,
 
+  verification: {
+    google: "zXs2njxnHBV_YaCbqenw0SGWnNxknQUbFivfyfAkqaI",
+  },
+
   title: {
     default: `${siteName} | Premium IPTV`,
     template: `%s | ${siteName}`,
@@ -69,6 +73,7 @@ export const metadata: Metadata = {
     siteName,
     locale: "tr_TR",
     type: "website",
+
     images: [
       {
         url: "/movie.jpg",
