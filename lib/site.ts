@@ -1,5 +1,5 @@
 export const SITE = {
-  name: "GolpumaTV",
+  name: "GoldpumaTV",
   domain: "goldpumatv.com",
   url: "https://goldpumatv.com",
   description:
