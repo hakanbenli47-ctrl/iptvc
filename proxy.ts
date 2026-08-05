@@ -3,32 +3,10 @@ import type { NextRequest } from "next/server";
 
 const BLOCKED_COUNTRIES = new Set(["TR"]);
 
-const REDIRECT_HOSTS = new Set([
-  "www.goldpumatv.com",
-  "platinomstariptv.com",
-  "www.platinomstariptv.com",
-]);
-
 export function proxy(request: NextRequest) {
   const { pathname } = request.nextUrl;
-  const hostname = request.nextUrl.hostname.toLowerCase();
 
-  /*
-   * www ve eski alan adını goldpumatv.com adresine yönlendirir.
-   */
-  if (REDIRECT_HOSTS.has(hostname)) {
-    const redirectUrl = request.nextUrl.clone();
-
-    redirectUrl.protocol = "https:";
-    redirectUrl.hostname = "goldpumatv.com";
-    redirectUrl.port = "";
-
-    return NextResponse.redirect(redirectUrl, 308);
-  }
-
-  /*
-   * Engel sayfasının tekrar proxy kontrolüne girmesini önler.
-   */
+  // Engel sayfasının tekrar işlenmesini önler.
   if (pathname === "/erisim-engellendi") {
     return NextResponse.next();
   }
@@ -37,9 +15,7 @@ export function proxy(request: NextRequest) {
     .get("x-vercel-ip-country")
     ?.toUpperCase();
 
-  /*
-   * Türkiye IP adreslerini engeller.
-   */
+  // Türkiye IP adreslerini engeller.
   if (countryCode && BLOCKED_COUNTRIES.has(countryCode)) {
     const blockedUrl = request.nextUrl.clone();
 
