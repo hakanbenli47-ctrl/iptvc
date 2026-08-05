@@ -19,7 +19,7 @@ const categoryImages = {
 
 export const content = {
   tr: {
-   brand: "GolpumaTV",
+   brand: "GoldpumaTV",
     nav: {
       home: "Ana Sayfa",
       experience: "Deneyim",
@@ -350,7 +350,7 @@ export const content = {
   },
 
   de: {
-    brand: "GolpumaTV",
+    brand: "GoldpumaTV",
     nav: {
       home: "Start",
       experience: "Erlebnis",
@@ -681,7 +681,7 @@ export const content = {
   },
 
   uk: {
-    brand: "GolpumaTV",
+    brand: "GoldpumaTV",
     nav: {
       home: "Home",
       experience: "Experience",
@@ -1006,7 +1006,7 @@ export const content = {
   },
 
   fr: {
-    brand: "GolpumaTV",
+    brand: "GoldpumaTV",
     nav: {
       home: "Accueil",
       experience: "Expérience",
@@ -1335,7 +1335,7 @@ export const content = {
   },
 
   nl: {
-   brand: "GolpumaTV",
+   brand: "GoldpumaTV",
     nav: {
       home: "Home",
       experience: "Ervaring",
