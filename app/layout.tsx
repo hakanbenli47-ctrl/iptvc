@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import Script from "next/script";
 import "./globals.css";
 
-const siteName = "GolpumaTV";
+const siteName = "GoldpumaTV";
 const siteUrl = "https://goldpumatv.com";
 
 const siteDescription =
